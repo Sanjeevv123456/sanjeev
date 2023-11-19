@@ -1,180 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital@1&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital@1&display=swap');
-
-* {
+*{
     margin: 0;
-   
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-}
-
-.container {
-    background-color: rgba(227, 14, 60, 0.648);
-    display: flex;
-
-}
-
-.sidebar {
-    background:rgba(199, 4, 243, 0.458);
-    width: 250px;
-    height: 100vh;
-}
-
-.sidebar nav {
-    padding: 45px;
-}
-
-.sidebar nav li {
-    list-style: none;
-    padding: 33px 0;
-    font-weight: bold;
-}
-
-.sidebar nav li a{
-    text-decoration: none;
-    color: black;
-}
-
-.main {
-    display: flex;
-    background-color: rgba(240, 233, 233, 0.269);
-    width: 80vw;
-
-
-}
-
-.infocontainer {
-    /* background: yellow; */
-    height: 50vh;
-    width: 70vw;
-    margin: 144px auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-.devpic img {
-    width: 50vh;
-}
-
-
-.greet {
-    font-size: 30px;
-    text-transform: capitalize;
-    font-family: 'Josefin Slab', serif;
-   
-}
-
-.name {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: capitalize;
-   
-}
-
-.about {
-    font-size: 15px;
-    font-family: 'Josefin Slab', serif;
-    text-transform: capitalize;
-}
-
-.buttons button {
-    margin-top: 10px;
-    padding :9px;
-    font-weight: bold;
-    background: #2724e4;
-    color: rgb(235, 233, 232);
-    margin-right :10px;
-    border-radius: 20px;
-}
-
-.buttons button:hover{
-    background: #f0ebeb;
-    color: rgb(53, 102, 207);
-}
-
-/* style contact form */
-.contactform {
-     width: 30vw;
-     height: 80vh;
-     border-radius: 15px;
-     background-color: azure;
-     margin: 80px auto 0;
-     box-shadow: 2px 2px 7px black;
     
-     
-     
 }
-.contactform h2{
-    text-align: center;
+.container{
+    height: 100vh;
+    width: 100%;
+    background: aliceblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
-.contactform form {
-margin: 30px 20px;
-
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;;
+    
 }
-input[type=text]{
-    margin: 10px 40px;
-    border-radius: 25px;
-    width: 70%;
-    padding: 2px 15px;
+.calculator form input{
+           border: 0;
+           outline: 0;
+           width: 60px;
+           height: 60px;
+           border-radius: 10px;
+           box-shadow:-8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(255,255,255,0.1);
+           background: transparent;
+           font-size: 20px;
+           color:#fff;
+           cursor: pointer;
+           margin: 10px;
 }
-
-input[type=email]{
-    border-radius: 25px;
-    width: 70%;
-    padding: 2px 15px;
-    margin: 10px 40px;
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
 }
-input[type=number]{
-    border-radius: 25px;
-    width: 70%;
-    margin: 10px 40px;
-    padding: 2px 15px;
+form .display input{
+  text-align: right;
+  font-size: 45px;
+  flex: 1;
+  box-shadow: none;
 }
-.submit{
-   margin: 40px 40% ;
-    width: 100px;
+form input.equal{
+       width: 145px;
 }
-.submit:hover{
-    background: #2620c7;
-    color: aliceblue;
+form input.operator{
+      color: #fff133;
 }
-
-input[type=submit]{
-    border-radius:10px ;
-  
-    font-weight: 800;
-    padding: 10px;
-} 
-
-input[type=checkbox]{
-    margin: 10px 0px;
-   width: 10%;
-}
-
-/* end of contact form */
-
-/* Style blog */
-.blogcontainer{
-   margin: 20px 10px;
-}
-/* end of Blog */
-
-/* style About me */
-.aboutme{
-    margin: 20px 40px;
-}
-
-.aboutme .name{
-    margin:50px 0px ;
-}
-/* end of about */
-
